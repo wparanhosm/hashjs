@@ -32,6 +32,21 @@ function eventClick(block, check) {
         }
 
     })
+
+    block.addEventListener("touchend", () => {
+        checked.push(check)
+
+        if (!allPositions.some(item => checked.includes(item))) {
+
+            block.style.backgroundImage = `url(${player ? "Images/X.png" : "Images/O.png"})`;
+            playerTime.setAttribute('src', `${player ? "Images/O.png" : "Images/X.png"}`);
+            section.style.cursor = `url(${player ? "Images/O.png" : "Images/X.png"}) 50 50, pointer`
+            player = !player
+
+        }
+
+    })
+
 }
 
 eventClick(a1, "a1")
