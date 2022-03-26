@@ -33,7 +33,7 @@ function eventClick(block, check) {
 
     })
 
-    block.addEventListener("ontouchend", () => {
+    block.addEventListener("touchend", () => {
         checked.push(check)
 
         if (!allPositions.some(item => checked.includes(item))) {
