@@ -56,7 +56,7 @@ h2 img {
 }
 
 #main:hover {
-    cursor: url(Images/O.png) 50 50, pointer;
+    cursor: url(Images/X.png) 50 50, pointer;
 }
 
 #a1, #a2, #a3 {
@@ -81,19 +81,27 @@ h2 img {
     background: white;
     height: 100%;
     width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 #result spam {
     font-size: 30pt;
     font-family: 'sans-serif', cursive;
     color: #536378;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #winnerX, #winnerO, #tie {
     display: none;
+}
+
+.playerWin {
+    height: 50px;
 }
 
 #restart {
@@ -106,6 +114,15 @@ h2 img {
     font-size: 20pt;
     font-family: 'sans-serif', cursive;
     color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#restart:hover {
+    cursor: pointer;
+    background-color: #222b38;
 }
 
 @media (max-width: 600px) {
