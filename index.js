@@ -14,36 +14,19 @@ const a1 = document.getElementById("a1"),
 let allPositions = ["a1", "a2", "a3", "b1", "b2", "b3", "c1", "c2", "c3"],
     checked = [],
     player = true, // true == X, false == O
+    typeEvent = (screen.width < 600) ? "touchend" : "click",
     image = ""
 
 
 function eventClick(block, check) {
 
-    block.addEventListener("click", () => {
+    block.addEventListener(typeEvent, () => {
         checked.push(check)
 
-        if (!allPositions.some(item => checked.includes(item))) {
-
-            block.style.backgroundImage = `url(${player ? "Images/X.png" : "Images/O.png"})`;
-            playerTime.setAttribute('src', `${player ? "Images/O.png" : "Images/X.png"}`);
-            section.style.cursor = `url(${player ? "Images/O.png" : "Images/X.png"}) 50 50, pointer`
-            player = !player
-
-        }
-
-    })
-
-    block.addEventListener("touchend", () => {
-        checked.push(check)
-
-        if (!allPositions.some(item => checked.includes(item))) {
-
-            block.style.backgroundImage = `url(${player ? "Images/X.png" : "Images/O.png"})`;
-            playerTime.setAttribute('src', `${player ? "Images/O.png" : "Images/X.png"}`);
-            section.style.cursor = `url(${player ? "Images/O.png" : "Images/X.png"}) 50 50, pointer`
-            player = !player
-
-        }
+        block.style.backgroundImage = `url(${player ? "Images/X.png" : "Images/O.png"})`;
+        playerTime.setAttribute('src', `${player ? "Images/O.png" : "Images/X.png"}`);
+        section.style.cursor = `url(${player ? "Images/O.png" : "Images/X.png"}) 50 50, pointer`
+        player = !player
 
     })
 
