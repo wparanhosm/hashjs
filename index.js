@@ -24,8 +24,14 @@ function eventClick(block, check) {
         checked.push(check)
 
         block.style.backgroundImage = `url(${player ? "Images/X.png" : "Images/O.png"})`;
-        playerTime.setAttribute('src', `${player ? "Images/O.png" : "Images/X.png"}`);
-        section.style.cursor = `url(${player ? "Images/O.png" : "Images/X.png"}) 50 50, pointer`
+
+        typeEvent == "click"
+            ?
+            section.style.cursor = `url(${player ? "Images/O.png" : "Images/X.png"}) 50 50, pointer`
+            :
+            console.clear()
+            
+        playerTime.setAttribute('src', `${player ? "Images/O.png" : "Images/X.png"}`)    
         player = !player
 
     })
