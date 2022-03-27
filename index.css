@@ -141,4 +141,12 @@ h2 img {
         cursor: default;
     }
 
+    #result spam {
+        font-size: 26pt;
+    }
+
+    #restart {
+        margin-top: 20%;
+        width: 40%;
+    }
 }
