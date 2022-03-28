@@ -61,6 +61,7 @@ const checkWinner = () => {
 
 // Função que mostra layout na tela com resultado do jogo.
 const endGame = n => {
+
     result.style.display = "flex"
     restart.style.display = "flex"
 
@@ -69,6 +70,7 @@ const endGame = n => {
 
     // Mensagem de empate caso ninguém vença.
     if (n == 0) tie.style.display = "flex"
+
 }
 
 // Recebe o elemento(block) e seu nome(check).
