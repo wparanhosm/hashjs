@@ -49,6 +49,8 @@ h2 img {
     height: 125px;
     width: 125px;
     border: 2px solid white;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #main div:hover {
@@ -132,8 +134,8 @@ h2 img {
     }
 
     #main div {
-        height: 100px;
-        width: 100px;
+        height: 25%;
+        width: 30%;
         background-size: contain;
     }
 
