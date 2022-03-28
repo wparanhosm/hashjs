@@ -11,7 +11,7 @@
 
 ## Como jogar?
 
-Para jogar basta clicar **`[nesse link](https://youngc0de.github.io/hashjs/)`**.
+Para jogar basta clicar **` [nesse link](https://youngc0de.github.io/hashjs/) `**.
 As regras são as mesmas, quem marcar três campos na diagonal, horizontal ou vertical, ganha.
 
 Imagem do jogo:
