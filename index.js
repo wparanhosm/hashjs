@@ -19,7 +19,7 @@ const a1 = document.getElementById("a1"),
 let checkedX = [], // recebe posições quando o jogador for X.
     checkedO = [], // recebe posições quando o jogador for O.
     player = true, // true == X, false == O.
-    typeEvent = (screen.width < 600) ? "touchend" : "click" // Verifica se é desktop ou Mobile.
+    typeEvent = (screen.width < 600) ? "touchstart" : "click" // Verifica se é desktop ou Mobile.
 
 // Array de arrays com todas as combinações.
 const combinations = [
